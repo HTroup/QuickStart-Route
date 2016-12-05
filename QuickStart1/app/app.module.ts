@@ -8,7 +8,7 @@ import { CatListComponent } from './cats/cat-list.component';
 //import { CatDetailsComponent } from './cats/cat-details.component';
 import { DogListComponent } from './dogs/dog-list.component';
 //import { DogDetailsComponent } from './dogs/dog-details.component';
-//import { PetService } from './pets.service';
+import { PetService } from './pets.service';
 //import { Pet } from './pet';
 import { routing } from './app.routes';
 
@@ -27,9 +27,9 @@ import { routing } from './app.routes';
         DogListComponent,
  //       DogDetailsComponent
     ],
-    //providers: [
-    //    PetService
-    //],
+    providers: [
+        PetService
+    ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

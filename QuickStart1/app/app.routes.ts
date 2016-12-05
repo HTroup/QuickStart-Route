@@ -10,6 +10,11 @@ import { DogListComponent } from './dogs/dog-list.component';
 
 // Route Configuration
 export const routes: Routes = [
+    {
+        path: '',
+        redirectTo: '/dogs',
+        pathMatch: 'full'
+    },
     { path: 'cats', component: CatListComponent },
     { path: 'dogs', component: DogListComponent }
 ];
